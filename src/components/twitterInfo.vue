@@ -10,6 +10,7 @@
         mounted(){
             let box = document.getElementById(`box`);
             box[`innerHTML`] += `<h2>${this[`num_friends`]} </h2>`;
+            box[`innerHTML`] += `<p>user logged is ${this[`logged_in`]}</p>`;
             for(let i =0;i<this[`tweets`].length;i++){
             box[`innerHTML`] += `<p>tweet is ${this[`tweets`][i]}</p>`;
             }
